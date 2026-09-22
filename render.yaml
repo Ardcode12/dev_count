@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: devforge-countdown-backend
+    env: node
+    rootDir: server
+    buildCommand: npm install
+    startCommand: node server.js
+    plan: free
+    healthCheckPath: /health
